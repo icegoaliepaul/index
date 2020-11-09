@@ -332,9 +332,6 @@ Wire Wire Line
 	1550 4100 1100 4100
 Wire Wire Line
 	1900 6150 1450 6150
-NoConn ~ 1900 5950
-NoConn ~ 1550 3900
-NoConn ~ 1950 1650
 $Comp
 L Driver_Motor:Pololu_Breakout_DRV8825 A6
 U 1 1 5EB0D841
@@ -587,9 +584,6 @@ Wire Wire Line
 	5000 4100 4550 4100
 Wire Wire Line
 	4900 6150 4450 6150
-NoConn ~ 4900 5950
-NoConn ~ 5000 3900
-NoConn ~ 4850 1700
 $Comp
 L Device:CP C4
 U 1 1 5EB78194
@@ -693,18 +687,6 @@ Text GLabel 4900 6450 0    50   Input ~ 0
 C_STEP
 Text GLabel 4900 6550 0    50   Input ~ 0
 C_DIR
-Connection ~ 2450 2850
-$Comp
-L Driver_Motor:Pololu_Breakout_DRV8825 A1
-U 1 1 5E418FA0
-P 2350 2050
-F 0 "A1" H 2350 2100 50  0000 C CNN
-F 1 "X_MOTOR_DRIVER" H 2700 2600 50  0000 C CNN
-F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2550 1250 50  0001 L CNN
-F 3 "https://www.pololu.com/product/2982" H 2450 1750 50  0001 C CNN
-	1    2350 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2750 2250 2900 2250
 Wire Wire Line
@@ -1142,4 +1124,34 @@ Wire Wire Line
 	5750 2250 5950 2250
 Wire Wire Line
 	5650 2000 5750 2000
+Connection ~ 2450 2850
+$Comp
+L Driver_Motor:Pololu_Breakout_DRV8825 A1
+U 1 1 5E418FA0
+P 2350 2050
+F 0 "A1" H 2350 2100 50  0000 C CNN
+F 1 "X_MOTOR_DRIVER" H 2700 2600 50  0000 C CNN
+F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 2550 1250 50  0001 L CNN
+F 3 "https://www.pololu.com/product/2982" H 2450 1750 50  0001 C CNN
+	1    2350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 1650 1500 1650
+Connection ~ 1500 1650
+Wire Wire Line
+	4850 1700 4400 1700
+Connection ~ 4400 1700
+Wire Wire Line
+	1550 3900 1100 3900
+Connection ~ 1100 3900
+Wire Wire Line
+	5000 3900 4550 3900
+Connection ~ 4550 3900
+Wire Wire Line
+	1900 5950 1450 5950
+Connection ~ 1450 5950
+Wire Wire Line
+	4900 5950 4450 5950
+Connection ~ 4450 5950
 $EndSCHEMATC
