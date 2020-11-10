@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector:USB_B J41
+L mobo-rescue:USB_B-Connector J41
 U 1 1 5EB46257
 P 1150 1450
 F 0 "J41" H 1207 1917 50  0000 C CNN
@@ -120,7 +120,7 @@ U 1 1 5EEC1D51
 P 4850 2000
 F 0 "C19" H 4942 2046 50  0000 L CNN
 F 1 "10uF" H 4942 1955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4850 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4850 2000 50  0001 C CNN
 F 3 "~" H 4850 2000 50  0001 C CNN
 	1    4850 2000
 	1    0    0    -1  
@@ -228,7 +228,7 @@ U 1 1 5EECFF74
 P 4850 1400
 F 0 "C18" H 4942 1446 50  0000 L CNN
 F 1 "10uF" H 4942 1355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4850 1400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4850 1400 50  0001 C CNN
 F 3 "~" H 4850 1400 50  0001 C CNN
 	1    4850 1400
 	1    0    0    -1  
@@ -239,7 +239,7 @@ U 1 1 5EED0831
 P 5650 1200
 F 0 "C20" H 5742 1246 50  0000 L CNN
 F 1 "10uF" H 5742 1155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5650 1200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 5650 1200 50  0001 C CNN
 F 3 "~" H 5650 1200 50  0001 C CNN
 	1    5650 1200
 	1    0    0    -1  
