@@ -1595,11 +1595,13 @@ void homeaxis(const AxisEnum axis) {
   if (bump) {
     // Move away from the endstop by the axis HOMING_BUMP_MM
     if (DEBUGGING(LEVELING)) DEBUG_ECHOLNPGM("Move Away:");
-    do_homing_move(axis, -bump
-      #if HOMING_Z_WITH_PROBE
-        , MMM_TO_MMS(axis == Z_AXIS ? Z_PROBE_SPEED_FAST : 0)
-      #endif
-    );
+    do {
+	    do_homing_move(axis, -bump
+	      #if HOMING_Z_WITH_PROBE
+	        , MMM_TO_MMS(axis == Z_AXIS ? Z_PROBE_SPEED_FAST : 0)
+	      #endif
+	    );
+    } while ((axis == Z_AXIS) && (READ(Z_MAX_PIN) != Z_MAX_ENDSTOP_INVERTING));
 
     #if ENABLED(DETECT_BROKEN_ENDSTOP)
       // Check for a broken endstop
